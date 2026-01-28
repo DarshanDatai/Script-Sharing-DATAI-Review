@@ -4,7 +4,7 @@ from label_studio_sdk import LabelStudio
 
 # 1. Setup
 LS_URL = "http://35.247.144.173"
-API_KEY = "722c55e67bcf557625372f7c0eb18a85110aa69e"
+API_KEY = "INSERT LEGACY ACCESS TOKEN"
 PROJECT_ID = 53 
 VIEW_COUNT = 2
 TOTAL_TARGET_MINUTES = 54
@@ -102,5 +102,6 @@ for idx, batch in enumerate(batches, 1):
                     break 
 
     print(f"Success: Created 'Review Batch {idx}' and '{csv_filename}' ({round(batch['duration'] / 60, 2)} mins).")
+
 
 print(f"\nFinished. Processed {TOTAL_TARGET_MINUTES} minutes total across 2 views.")

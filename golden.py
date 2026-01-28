@@ -4,7 +4,7 @@ from label_studio_sdk import LabelStudio
 
 # 1. Setup
 LS_URL = "http://35.247.144.173"
-API_KEY = "722c55e67bcf557625372f7c0eb18a85110aa69e"
+API_KEY = "INSERT LEGACY ACCESS TOKEN"
 PROJECT_ID = 53 
 
 # 2. Define our 3 Review Tiers (min_sec, max_sec, target_min)
@@ -91,5 +91,6 @@ for idx, config in enumerate(BATCH_CONFIGS):
                     break 
 
     print(f"Created: {config['title']} | Duration: {round(current_duration/60, 2)}m | File: {csv_filename}")
+
 
 print("\nAll views and CSVs generated.")

@@ -7,11 +7,12 @@ LS_URL = "http://35.247.144.173"
 API_KEY = "INSERT LEGACY ACCESS TOKEN"
 PROJECT_ID = 53 
 
-# 2. Define our 3 Review Tiers (min_sec, max_sec, target_min)
+# 2. Define our 4 Review Tiers (min_sec, max_sec, target_min)
 BATCH_CONFIGS = [
+    {"min": 0, "max": 20, "target_m": 54, "title": "Review 0-20s"}
     {"min": 20,  "max": 60,   "target_m": 42, "title": "Review 20-60s"},
     {"min": 60,  "max": 100,  "target_m": 14, "title": "Review 60-100s"},
-    {"min": 100, "max": 9999, "target_m": 10, "title": "Review 100s Plus"}
+    {"min": 100, "max": 9999, "target_m": 10, "title": "Review 100s Plus"},
 ]
 
 ls = LabelStudio(base_url=LS_URL, api_key=API_KEY)
@@ -94,3 +95,4 @@ for idx, config in enumerate(BATCH_CONFIGS):
 
 
 print("\nAll views and CSVs generated.")
+
